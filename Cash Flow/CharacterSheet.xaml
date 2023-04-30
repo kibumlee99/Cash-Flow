@@ -1,0 +1,32 @@
+﻿<Window x:Class="Cash_Flow.CharacterSheet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cash_Flow"
+        mc:Ignorable="d"
+        Title="CharacterSheet" Height="450" Width="800">
+    <Canvas Background="#FFB5BD64">
+        <Rectangle Height="100" Canvas.Left="10" Stroke="Black" Canvas.Top="10" Width="100"/>
+        <Image x:Name="pImage" Height="76" Canvas.Left="21" Canvas.Top="22" Width="78"/>
+        <TextBlock x:Name="name" Canvas.Left="132" TextWrapping="Wrap" Text="TextBlock" Canvas.Top="41" FontWeight="Bold" FontSize="14"/>
+        <TextBlock Canvas.Left="267" TextWrapping="Wrap" Text="Character Sheet" Canvas.Top="36" FontWeight="Bold" FontSize="36" TextDecorations="Underline"/>
+        <Rectangle Height="18" Stroke="Black" Canvas.Top="117" Width="800" HorizontalAlignment="Left" VerticalAlignment="Center" Fill="Black"/>
+        <TextBlock x:Name="jobName" Canvas.Left="132" TextWrapping="Wrap" Text="TextBlock" Canvas.Top="65" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Rectangle Height="299" Canvas.Left="267" Stroke="Black" Canvas.Top="140" Width="6" HorizontalAlignment="Left" VerticalAlignment="Center" Fill="Black"/>
+        <Rectangle Height="299" Canvas.Left="528" Stroke="Black" Canvas.Top="140" Width="6" Fill="Black" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Canvas.Left="100" TextWrapping="Wrap" Text="Finances" Canvas.Top="156" FontSize="18" FontWeight="Bold"/>
+        <TextBlock Canvas.Left="364" TextWrapping="Wrap" Text="Properties" Canvas.Top="161" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock Canvas.Left="624" TextWrapping="Wrap" Text="Stocks" Canvas.Top="161" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Canvas.Left="22" TextWrapping="Wrap" Text="Total Expenses:" Canvas.Top="230" FontWeight="Bold"/>
+        <TextBlock Canvas.Left="22" TextWrapping="Wrap" Text="Cash Flow:" Canvas.Top="314" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock Canvas.Left="22" TextWrapping="Wrap" Text="Savings:" Canvas.Top="274" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock x:Name="propertiesBox" Canvas.Left="299" TextWrapping="Wrap" Canvas.Top="230" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock x:Name="stocksLabel" Canvas.Left="565" TextWrapping="Wrap" Canvas.Top="230" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock x:Name="totalExpensesBox" Canvas.Left="113" TextWrapping="Wrap" Canvas.Top="230" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock x:Name="savingsBox" Canvas.Left="73" TextWrapping="Wrap" Canvas.Top="274" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock x:Name="cashFlowBox" Canvas.Left="87" TextWrapping="Wrap" Canvas.Top="314" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock x:Name="loanText" Canvas.Left="22" TextWrapping="Wrap" Text="Loan:" Canvas.Top="344" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="loanLabel" Content="" Canvas.Left="57" Canvas.Top="339" FontWeight="Bold"/>
+    </Canvas>
+</Window>

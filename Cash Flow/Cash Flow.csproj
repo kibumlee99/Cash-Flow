@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Cash_Flow</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="background.jpg" />
+    <None Remove="cashflow-logo.jpg" />
+    <None Remove="p1piece.png" />
+    <None Remove="p2piece.png" />
+    <None Remove="p3piece.png" />
+    <None Remove="p4piece.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.33" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="background.jpg" />
+    <Resource Include="cashflow-logo.jpg" />
+    <Resource Include="p1piece.png" />
+    <Resource Include="p2piece.png" />
+    <Resource Include="p3piece.png" />
+    <Resource Include="p4piece.png" />
+  </ItemGroup>
+
+</Project>

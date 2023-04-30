@@ -1,0 +1,25 @@
+﻿<Window x:Class="Cash_Flow.SellStocks"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cash_Flow"
+        mc:Ignorable="d"
+        Title="SellStocks" Height="326" Width="623">
+    <Canvas>
+        <TextBlock x:Name="headingBox" Canvas.Left="247" TextWrapping="Wrap" Canvas.Top="17" FontSize="20"/>
+        <TextBlock Canvas.Left="191" TextWrapping="Wrap" Text="Enter amount to sell:" Canvas.Top="67" FontWeight="Bold" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="amountBox" Canvas.Left="352" TextWrapping="Wrap" Canvas.Top="70" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Bought at:" Canvas.Left="262" Canvas.Top="114" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Current Price:" Canvas.Left="262" Canvas.Top="140" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Shares:" Canvas.Left="265" Canvas.Top="166" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="Sell" Canvas.Left="225" Canvas.Top="250" HorizontalAlignment="Center" Height="37" VerticalAlignment="Top" Width="89" Click="Button_Click"/>
+        <Button Content="Dont Sell" Canvas.Left="352" Canvas.Top="250" Height="37" Width="89" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Label Content="You will recieve:" Canvas.Left="265" Canvas.Top="192" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label x:Name="boughtAtLabel" Content="" Canvas.Left="332" Canvas.Top="114" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+        <Label x:Name="currentPriceLabel" Content="" Canvas.Left="343" Canvas.Top="142" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold"/>
+        <Label x:Name="sharesLabel" Content="" Canvas.Left="313" Canvas.Top="166" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="recieveLabel" Content="$0" Canvas.Left="352" Canvas.Top="192" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold"/>
+        <Label x:Name="messageLabel" Content="" Canvas.Left="269" Canvas.Top="218" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold"/>
+    </Canvas>
+</Window>

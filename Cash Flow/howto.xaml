@@ -1,0 +1,17 @@
+﻿<Window x:Class="Cash_Flow.howto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cash_Flow"
+        mc:Ignorable="d"
+        Title="howto" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="professionButton" Content="Profession Cards" HorizontalAlignment="Left" Margin="0,82,0,0" VerticalAlignment="Top" Height="62" Width="162" Click="professionButton_Click"/>
+        <Button Content="Rat Race Cards and Spaces" HorizontalAlignment="Left" Margin="0,144,0,0" VerticalAlignment="Top" Height="62" Width="162"/>
+        <Button Content="Buy/Sell Real Estate" HorizontalAlignment="Left" Margin="0,206,0,0" VerticalAlignment="Top" Height="62" Width="162"/>
+        <Button Content="Buy/Sell Stocks" HorizontalAlignment="Left" Margin="0,268,0,0" VerticalAlignment="Top" Height="62" Width="162"/>
+        <Canvas x:Name="canvas" Margin="178,10,0,0"/>
+
+    </Grid>
+</Window>
